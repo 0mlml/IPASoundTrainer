@@ -1,0 +1,141 @@
+{
+  "pack": {
+    "files": [
+      {
+        "type": "image",
+        "key": "background",
+        "url": "assets/images/background.png"
+      },
+      {
+        "type": "image",
+        "key": "playerIcon",
+        "url": "assets/images/moon.png"
+      },
+      {
+        "type": "image",
+        "key": "heartIcon",
+        "url": "assets/images/heart.png"
+      },
+      {
+        "type": "image",
+        "key": "starIcon",
+        "url": "assets/images/star.png"
+      },
+      {
+        "type": "image",
+        "key": "giftIcon",
+        "url": "assets/images/gift.png"
+      },
+      {
+        "type": "image",
+        "key": "labio-dentalIcon",
+        "url": "assets/images/labio-dental.png"
+      },
+      {
+        "type": "image",
+        "key": "dentalIcon",
+        "url": "assets/images/dental.png"
+      },
+      {
+        "type": "image",
+        "key": "open-mid-backIcon",
+        "url": "assets/images/open-mid-back.png"
+      },
+      {
+        "type": "image",
+        "key": "near-open-frontIcon",
+        "url": "assets/images/near-open-front.png"
+      },
+      {
+        "type": "audio",
+        "key": "pointGain",
+        "url": "assets/sounds/point-gain.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "heartLost",
+        "url": "assets/sounds/heart-lost.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "firstSound",
+        "url": "assets/sounds/first.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "thirstSound",
+        "url": "assets/sounds/thirst.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "deafSound",
+        "url": "assets/sounds/deaf.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "deathSound",
+        "url": "assets/sounds/death.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "freeSound",
+        "url": "assets/sounds/free.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "threeSound",
+        "url": "assets/sounds/three.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "butSound",
+        "url": "assets/sounds/but.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "batSound",
+        "url": "assets/sounds/bat.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "cupSound",
+        "url": "assets/sounds/cup.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "capSound",
+        "url": "assets/sounds/cap.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "cutSound",
+        "url": "assets/sounds/cut.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "catSound",
+        "url": "assets/sounds/cat.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "muchSound",
+        "url": "assets/sounds/much.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "matchSound",
+        "url": "assets/sounds/match.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "butterSound",
+        "url": "assets/sounds/butter.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "batterSound",
+        "url": "assets/sounds/batter.mp3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "questionSets": {
+    "setA": ["labio-dental", "dental"],
+    "setB": ["open-mid-back","near-open-front"]
+  },
+  "gameObjects": {
+    "first": {
+      "questionSet": "setA",
+      "answer": 0
+    },
+    "thirst": {
+      "questionSet": "setA",
+      "answer": 1
+    },
+    "deaf": {
+      "questionSet": "setA",
+      "answer": 0
+    },
+    "death": {
+      "questionSet": "setA",
+      "answer": 1
+    },
+    "free": {
+      "questionSet": "setA",
+      "answer": 0
+    },
+    "three": {
+      "questionSet": "setA",
+      "answer": 1
+    },
+    "but": {
+      "questionSet": "setB",
+      "answer": 0
+    },
+    "bat": {
+      "questionSet": "setB",
+      "answer": 1
+    },
+    "cup": {
+      "questionSet": "setB",
+      "answer": 0
+    },
+    "cap": {
+      "questionSet": "setB",
+      "answer": 1
+    },
+    "cut": {
+      "questionSet": "setB",
+      "answer": 0
+    },
+    "cat": {
+      "questionSet": "setB",
+      "answer": 1
+    },
+    "much": {
+      "questionSet": "setB",
+      "answer": 0
+    },
+    "match": {
+      "questionSet": "setB",
+      "answer": 1
+    },
+    "butter": {
+      "questionSet": "setB",
+      "answer": 0
+    },
+    "batter": {
+      "questionSet": "setB",
+      "answer": 1
+    }
+  }
+}
