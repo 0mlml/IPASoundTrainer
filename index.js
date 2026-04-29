@@ -1,7 +1,7 @@
 const gameOptions = {
     playerSpeed: 500,
     collisionCooldown: 60,
-    initialHearts: 3,
+    initialHearts: 5,
     mapWidth: 800,
     mapHeight: 800,
     restartTimer: 3000,
@@ -58,6 +58,10 @@ class Game extends Phaser.Scene {
 
     constructor() {
         super('Game')
+        window.ref = this
+    }
+
+    init() {
         this.score = 0
     }
 
@@ -66,7 +70,7 @@ class Game extends Phaser.Scene {
         this.load.json('gameData', 'assets/game_data.json')
     }
 
-    create() {
+    create(sx, sy) {
         const setUpWorld = () => {
             this.cameras.main.fadeIn(2000)
             this.cursors = this.input.keyboard.createCursorKeys()
@@ -84,8 +88,9 @@ class Game extends Phaser.Scene {
         }
 
         const setUpScore = () => {
-            this.scoreText = this.add.text(90, 25, '0', {fontSize: '60px', fill: '#000'})
-            this.add.image(50, 50, 'starIcon').setScale(0.3)
+            this.scoreText = this.add.text(90, 25, this.score, {fontSize: '60px', fill: '#000'})
+            this.scoreIcon = this.add.image(50, 50, 'starIcon')
+            this.scoreIcon.setScale(0.3)
         }
 
         const setUpHearts = () => {
@@ -260,6 +265,7 @@ class Game extends Phaser.Scene {
             'GAME OVER',
             { fontSize: '64px', color: '#ffffff', fontStyle: 'bold' }
         ).setOrigin(0.5)
+
         this.add.text(
             gameOptions.mapWidth / 2,
             gameOptions.mapHeight / 2 + 35,
@@ -270,6 +276,8 @@ class Game extends Phaser.Scene {
         // clear other objects
         this.objects.clear(true, true)
         this.scoreText.destroy()
+        this.scoreIcon.destroy()
+        this.events.removeAllListeners('heartLost')
 
         // restart
         this.time.delayedCall(gameOptions.restartTimer, () => {
