@@ -76,6 +76,7 @@ class Game extends Phaser.Scene {
             this.cursors = this.input.keyboard.createCursorKeys()
             this.add.image(0, 0, 'background').setOrigin(0).setScale(0.7)
             this.gameData = this.cache.json.get('gameData')
+            this.objectOrder = []
             this.cooldown = 0
         }
 
@@ -159,7 +160,10 @@ class Game extends Phaser.Scene {
      * Creates and adds a new GameObject to the scene
      */
     spawnObject() {
-        const objectName = Phaser.Utils.Array.GetRandom(Object.keys(this.gameData.gameObjects))
+        if (this.objectOrder.length === 0) {
+            this.objectOrder = Phaser.Utils.Array.Shuffle(Object.keys(this.gameData.gameObjects))
+        }
+        const objectName = this.objectOrder.pop()
         // non-deterministic way to avoid spawning on the player
         let x, y
         do {x = Phaser.Math.Between(40, gameOptions.mapWidth - 40)
